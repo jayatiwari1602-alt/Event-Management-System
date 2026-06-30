@@ -37,7 +37,7 @@ document.getElementById("contactBtn").addEventListener("click", function () {
 document.getElementById("logoutBtn").addEventListener("click", function () {
     let logout = confirm("Are you sure you want to logout?");
     if (logout) {
-        window.location.href = "landing.html";
+        window.location.href = "Landing.html";
     }
 });
 
@@ -45,7 +45,7 @@ document.getElementById("logoutBtn").addEventListener("click", function () {
 document.querySelectorAll(".btn-warning").forEach(function(button){
     button.addEventListener("click", function(){
         if(this.innerText === "View Details"){
-            window.location.href = "event-details.html";
+            window.location.href = "event-detail.html";
         }
 
         if(this.innerText === "Book Now"){
