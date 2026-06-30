@@ -15,11 +15,11 @@
 
     <h1 class="login-title">EventPro Login</h1>
 
-    <form>
+    <form id="loginForm">
 
-        <input type="email" class="form-control mb-3" placeholder="📧 Enter Your Email">
+        <input type="email" id="email" class="form-control mb-3" placeholder="📧 Enter Your Email" required>
 
-        <input type="password" class="form-control mb-3" placeholder="🔒 Enter Your Password">
+        <input type="password" id="password" class="form-control mb-3" placeholder="🔒 Enter Your Password" required>
 
         <button class="btn login-btn">Login</button>
 
@@ -36,6 +36,7 @@
 
 </div>
 
+<script src="common.js"></script>
 <script src="login.js"></script>
 
 </body>

@@ -1,31 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-    alert("Welcome to EventPro!");
+    EventProUI.toast("Welcome to EventPro! Discover amazing events today.", "info");
 });
 
-// Get Tickets
-document.getElementById("ticketBtn").addEventListener("click", function () {
-    window.location.href = "login.html";
-});
+// Get Tickets Button
+const ticketBtn = document.getElementById("ticketBtn");
+if (ticketBtn) {
+    ticketBtn.addEventListener("click", function () {
+        window.location.href = "login.html";
+    });
+}
 
-// Explore Events
-document.getElementById("exploreBtn").addEventListener("click", function () {
-    window.location.href = "events.html";
-});
+// Explore Events Button
+const exploreBtn = document.getElementById("exploreBtn");
+if (exploreBtn) {
+    exploreBtn.addEventListener("click", function () {
+        window.location.href = "events.html";
+    });
+}
 
-// Learn More
-document.getElementById("learnBtn").addEventListener("click", function () {
-    window.location.href = "about.html";
-});
-
-document.getElementById("ticketBtn").addEventListener("click", function () {
-    window.location.href = "login.html";
-});
-
-document.getElementById("exploreBtn").addEventListener("click", function () {
-    window.location.href = "events.html";
-});
-
-document.getElementById("learnBtn").addEventListener("click", function () {
-    window.location.href = "about.html";
-});
+// Learn More Button
+const learnBtn = document.getElementById("learnBtn");
+if (learnBtn) {
+    learnBtn.addEventListener("click", function () {
+        window.location.href = "about.html";
+    });
+}
 

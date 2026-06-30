@@ -1,7 +1,5 @@
 document.getElementById("contactForm").addEventListener("submit", function(e){
-
-e.preventDefault();
-
-alert("Your message has been sent successfully!");
-
+    e.preventDefault();
+    EventProUI.toast("Your message has been sent successfully!", "success");
+    e.target.reset();
 });

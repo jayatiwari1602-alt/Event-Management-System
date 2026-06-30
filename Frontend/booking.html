@@ -13,33 +13,34 @@
 
 <div class="booking-box">
 
-<h1>Book Your Event</h1>
+<h1 id="bookingHeading">Book Event</h1>
+<p class="text-center text-secondary mb-4" id="bookingEventTitle">Loading event details...</p>
 
 <form id="bookingForm">
 
 <label>Full Name</label>
-<input type="text" class="form-control mb-3" placeholder="Enter Full Name">
+<input type="text" id="bookingName" class="form-control mb-3" placeholder="Enter Full Name" required>
 
 <label>Email Address</label>
-<input type="email" class="form-control mb-3" placeholder="Enter Email">
+<input type="email" id="bookingEmail" class="form-control mb-3" placeholder="Enter Email" required>
 
 <label>Mobile Number</label>
-<input type="tel" class="form-control mb-3" placeholder="Enter Mobile Number">
+<input type="tel" id="bookingPhone" class="form-control mb-3" placeholder="Enter Mobile Number">
 
 <label>Number of Tickets</label>
-<input type="number" class="form-control mb-3" placeholder="Enter Tickets">
+<input type="number" id="bookingTickets" class="form-control mb-3" placeholder="Enter Tickets" min="1" max="10" value="1" required>
 
 <label>Payment Method</label>
 
-<select class="form-control mb-4">
-<option>Select Payment</option>
-<option>UPI</option>
-<option>Credit Card</option>
-<option>Debit Card</option>
-<option>Cash</option>
+<select id="bookingPayment" class="form-control mb-4" required>
+<option value="">Select Payment</option>
+<option value="UPI">UPI</option>
+<option value="Credit Card">Credit Card</option>
+<option value="Debit Card">Debit Card</option>
+<option value="Cash">Cash</option>
 </select>
 
-<button class="btn booking-btn">Confirm Booking</button>
+<button class="btn booking-btn" type="submit" id="confirmBtn" disabled>Confirm Booking</button>
 
 </form>
 
@@ -49,6 +50,7 @@
 
 </div>
 
+<script src="common.js"></script>
 <script src="booking.js"></script>
 
 </body>
