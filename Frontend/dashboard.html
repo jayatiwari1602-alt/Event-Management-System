@@ -88,7 +88,7 @@ Logout
 
 <div class="welcome">
 
-<h1>Welcome Back, Jaya 👋</h1>
+<h1 id="welcomeUser">Welcome Back 👋</h1>
 
 <p>
 Manage your events like a professional.
@@ -100,7 +100,7 @@ Manage your events like a professional.
 
 <div class="card-box">
 
-<h2>120</h2>
+<h2 id="totalEventsStat">0</h2>
 
 <p>Total Events</p>
 
@@ -108,7 +108,7 @@ Manage your events like a professional.
 
 <div class="card-box">
 
-<h2>45</h2>
+<h2 id="bookingsStat">0</h2>
 
 <p>Bookings</p>
 
@@ -116,9 +116,9 @@ Manage your events like a professional.
 
 <div class="card-box">
 
-<h2>20</h2>
+<h2>1</h2>
 
-<p>Favorites</p>
+<p>Active Plan</p>
 
 </div>
 
@@ -132,52 +132,21 @@ Manage your events like a professional.
 
 </div>
 
-<h2 class="section-title">
-Trending Events
-</h2>
+<h2 class="section-title" id="bookedEventsTitle">Your Booked Events</h2>
 
-<div class="events">
-
-<div class="event-card">
-
-<h3>🎵 Music Concert</h3>
-
-<p>Indore</p>
-
-<button class="btn btn-warning">
-View Details
-</button>
-
+<div class="events" id="bookedEventsContainer">
+    <div class="text-secondary w-100 py-3 text-center">Loading your registered events...</div>
 </div>
 
-<div class="event-card">
+<h2 class="section-title">Explore Upcoming Events</h2>
 
-<h3>💻 Tech Conference</h3>
-
-<p>Bhopal</p>
-
-<button class="btn btn-warning">
-Book Now
-</button>
-
-</div>
-
-<div class="event-card">
-
-<h3>🎭 Cultural Fest</h3>
-
-<p>Ujjain</p>
-
-<button class="btn btn-warning">
-Explore
-</button>
-
+<div class="events" id="dashboardEventsContainer">
+    <div class="text-secondary w-100 py-3 text-center">Loading upcoming events...</div>
 </div>
 
 </div>
 
-</div>
-
+<script src="common.js"></script>
 <script src="dashboard.js"></script>
 
 </body>
