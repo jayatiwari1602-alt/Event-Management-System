@@ -15,6 +15,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e){
     }
     else{
         alert("Registration Successful!");
+        window.location.href = "login.html";
     }
 
 });

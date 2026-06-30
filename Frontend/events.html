@@ -11,9 +11,32 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
-<a class="navbar-brand text-warning fw-bold" href="#">EventPro</a>
+<a class="navbar-brand text-warning fw-bold" href="Landing.html">EventPro</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="Landing.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+    </ul>
+    <a href="login.html" class="btn btn-warning rounded-pill px-4">Get Tickets</a>
+</div>
 </div>
 </nav>
 
@@ -69,6 +92,7 @@
 © 2026 EventPro | All Rights Reserved
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="events.js"></script>
 
 </body>
