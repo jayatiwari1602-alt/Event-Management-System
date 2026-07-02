@@ -9,7 +9,7 @@ body{
     font-family:Arial,sans-serif;
 }
 
-.login-box{
+.register-box{
     width:400px;
     background:#1f2937;
     padding:35px;
@@ -17,50 +17,48 @@ body{
     box-shadow:0 0 20px rgba(255,193,7,0.4);
 }
 
-.login-title{
+.register-box h1{
     color:#ffc107;
     text-align:center;
     margin-bottom:25px;
-    font-size:35px;
-    font-weight:bold;
-    text-shadow:0 0 10px #ffc107;
 }
 
 .form-control{
     background:#2d3748;
     color:white;
-    border:2px solid #ffc107;
-    border-radius:10px;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
     padding:12px;
-    height:50px;
 }
 
 .form-control::placeholder{
-    color:#d1d5db;
-    font-style:italic;
-    font-weight:bold;
+    color:#6b7280;
+    font-size: 16px;
+    font-weight: 600;
+    font-style:normal;
+    letter-spacing: 1px;
 }
 
 .form-control:focus{
-    background:#374151;
-    color:white;
-    border-color:#ff9800;
+    border-color:#ffc107;
     box-shadow:0 0 10px #ffc107;
 }
 
-.login-btn{
-    width:100%;
-    background:#ffc107;
-    color:black;
-    font-weight:bold;
-    border:none;
-    border-radius:10px;
-    padding:12px;
+.btn-warning{
+    font-weight: bold;
+    border-radius: 10px;
+    height: 45px;
 }
 
-.login-btn:hover{
-    background:#ff9800;
-    color:white;
+.btn-primary{
+    background:#ffc107;
+    border:none;
+    color:black;
+    font-weight:bold;
+}
+
+.btn-primary:hover{
+    background:#ffb300;
 }
 
 p{

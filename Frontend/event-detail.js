@@ -1,0 +1,5 @@
+document.getElementById("bookBtn").addEventListener("click",function(){
+
+alert("Redirecting to Booking Page...");
+
+});

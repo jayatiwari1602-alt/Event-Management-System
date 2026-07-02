@@ -1,11 +1,7 @@
-window.onload = function () {
+document.querySelector("form").addEventListener("submit",function(e){
 
-    document.querySelector("form").addEventListener("submit", function(e) {
+e.preventDefault();
 
-        e.preventDefault();
+alert("Login Successful!");
 
-        alert("Login Successfully!");
-
-    });
-
-};
+});

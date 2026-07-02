@@ -1,0 +1,26 @@
+body{
+background:#111827;
+font-family:Arial,sans-serif;
+color:white;
+}
+
+.about-card{
+background:#1f2937;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,193,7,.4);
+}
+
+.text-warning{
+color:#ffc107 !important;
+}
+
+.about-card p,
+.about-card li{
+font-size:18px;
+line-height:30px;
+}
+
+.about-card:hover{
+transform:translateY(-5px);
+transition:.3s;
+}
